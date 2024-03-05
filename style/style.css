@@ -1,0 +1,269 @@
+:root {
+  --color-text: #ffffff;
+  --color-header-footer: #4e4e4e;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  scroll-behavior: smooth;
+}
+
+.roboto-bold {
+  font-weight: 700;
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+/* header {
+  color: #ffffff;
+  background-color: #4e4e4e;
+  font-size: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+} */
+
+.nav {
+  height: 50px;
+  color: var(--color-text);
+  background-color: var(--color-header-footer);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.header {
+  width: 100%;
+  height: calc(100vh - 50px);
+  background-image: url(/image/background_img.jpg);
+  background-size: cover;
+}
+
+.header-shadow {
+  width: 100%;
+  height: calc(100vh - 50px);
+  background-image: url(/image/main_image.png);
+  /* display: flex;
+  align-items: center; */
+}
+
+.header-container {
+  color: var(--color-text);
+}
+
+.header-text {
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+}
+
+.marg {
+  margin: 0 0 0 46px;
+}
+
+.header-right a:not(.contacts):hover {
+  color: rgb(36, 36, 236);
+}
+
+.contacts {
+  cursor: not-allowed;
+}
+
+.header-right {
+  float: right;
+}
+
+.contenr-info-text {
+  width: 960px;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.info-text {
+  width: 55%;
+  /* display: flex;
+  align-items: center;
+  flex-wrap: wrap; */
+  color: var(--color-text);
+}
+
+img {
+  height: 574px;
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  color: var(--color-text);
+  background-color: var(--color-header-footer);
+  height: 71px;
+}
+
+.footer div {
+  display: flex;
+  align-items: center;
+}
+
+.footer p {
+  margin: 0;
+}
+
+.footer-text {
+  font-size: 18px;
+}
+
+.click-oferta {
+  font-size: 18px;
+  color: white;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: 2px solid white;
+  padding: 14px 57px;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  transition: color 1s, background-color 1s;
+}
+
+.click-oferta:hover {
+  background-color: #ffffff;
+  color: black;
+}
+
+.services {
+  background-color: #405d78;
+  width: 100%;
+  height: calc(100vh - 71px);
+  display: flex;
+  align-items: center;
+}
+
+.text-services {
+  color: var(--color-text);
+  font-size: 36px;
+  margin: 50px 0 70px 0;
+}
+
+.items {
+  display: grid;
+  grid-template-rows: 194px 194px;
+  grid-template-columns: 198px 198px 198px;
+  gap: 63px;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 64px 0;
+}
+
+.item {
+  background-color: #f1f1f1;
+  padding: 30px;
+  color: #000000;
+  font-size: 24px;
+  width: 198px;
+  height: 194px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+}
+
+.item:hover {
+  transform: scale(1.05);
+}
+
+.dot {
+  position: absolute;
+  left: -11px;
+  top: -11px;
+  height: 25px;
+  width: 25px;
+  background-color: #e07a64;
+  border-radius: 50%;
+  display: block;
+}
+
+.text-item {
+  margin: 0 auto;
+}
+
+/*.social-media {
+    size: 3px;
+}*/
+
+.icon-box {
+  margin-left: auto;
+}
+
+.icon-box a {
+  color: white;
+  margin-left: 18px;
+  font-size: 31px;
+  transition: color 0.3s;
+}
+
+.icon-box a:hover {
+  color: rgb(36, 36, 236);
+}
+
+.services-section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.service {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.service-info {
+  margin-left: 60px;
+  font-size: 18px;
+}
+
+.text-spec {
+  margin-bottom: 10px;
+}
+
+.service:nth-of-type(even) {
+  flex-direction: row-reverse;
+  .service-info {
+    margin-right: 60px;
+    text-align: right;
+  }
+}
+
+.text-specialist {
+  margin-bottom: 71px;
+  font-size: 36px;
+}
+
+.text-header {
+  font-size: 36px;
+}
+
+.header-text-content {
+  margin: 42px 0;
+  font-size: 18px;
+}

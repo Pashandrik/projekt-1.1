@@ -1,18 +1,130 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projekt zaliczeniowy #1</title>
-</head>
-<body>
-    <header></header>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style/style.css" />
+    <script
+      src="https://kit.fontawesome.com/1bff988e92.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <div class="container">
+          <a class="header-text roboto-bold">moja firma</a>
+          <div class="header-right">
+            <a href="#specialisty" class="header-text marg">o nas</a>
+            <a href="#services" class="header-text marg">oferta</a>
+            <a class="header-text marg display contacts">kontakt</a>
+          </div>
+        </div>
+      </nav>
+      <div class="header">
+        <div class="header-shadow">
+          <saction class="header-container container"></saction>
+          <div class="contenr-info-text">
+            <div class="info-text">
+              <h1 class="roboto-bold text-header">
+                Nasza firma oferuje najwyższej jakości produkty.
+              </h1>
+              <p class="header-text-content">
+                Nie wierz nam na słowo - sprawdź
+              </p>
+              <a href="#services">
+                <button class="click-oferta roboto-bold">oferta</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
     <main>
-        <img
-            src="image/Tło sekcji.jpg" 
-            alt="Tło sekcji"
-        />
+      <section class="services-section" id="specialisty">
+        <div class="container">
+          <h1 class="text-specialist roboto-bold">Nasi specjaliści</h1>
+          <div class="service">
+            <img
+              class="photo"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYwY_a2vZJ37-PUMDJ-0nc3-dZ1dPuOrGp5Q&usqp=CAU"
+              loading="lazy"
+            />
+            <div class="service-info">
+              <h3 class="roboto-bold text-spec">Imię Nazwisko [ dział ]</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+                vel massa et lacus egestas cursus a non magna. Fusce scelerisque
+                blandit nunc, id malesuada ex lobortis a. Integer felis nisi,
+                tempor elementum lorem in, varius pellentesque ligula. Duis
+                efficitur lacinia enim, non tincidunt libero ultrices in.
+              </p>
+            </div>
+          </div>
+          <div class="service">
+            <img
+              class="photo"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYwY_a2vZJ37-PUMDJ-0nc3-dZ1dPuOrGp5Q&usqp=CAU"
+              loading="lazy"
+            />
+            <div class="service-info">
+              <h3 class="roboto-bold text-spec">Imię Nazwisko [ dział ]</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+                vel massa et lacus egestas cursus a non magna. Fusce scelerisque
+                blandit nunc, id malesuada ex lobortis a. Integer felis nisi,
+                tempor elementum lorem in, varius pellentesque ligula. Duis
+                efficitur lacinia enim, non tincidunt libero ultrices in.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="services" id="services">
+        <div class="container">
+          <h3 class="text-services">Czym zajmuje się nasza firma?</h3>
+          <div class="items">
+            <div class="item">
+              <span class="dot"></span>
+              <p class="text-item">Usługa 1</p>
+              <p>(nowość)</p>
+            </div>
+            <div class="item">
+              <p class="text-item">Usługa 2</p>
+            </div>
+            <div class="item">
+              <p class="text-item">Usługa 3</p>
+            </div>
+            <div class="item">
+              <p class="text-item">Usługa 4</p>
+            </div>
+            <div class="item">
+              <p class="text-item">Usługa 5</p>
+            </div>
+            <div class="item">
+              <p class="text-item">Usługa 6</p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer></footer>
-</body>
+    <footer class="footer">
+      <div class="container">
+        <p class="footer-text">
+          Nazwa firmy - wszelkie prawa zastrzeżone, 2019
+        </p>
+        <span class="icon-box">
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+        </span>
+      </div>
+    </footer>
+  </body>
 </html>
